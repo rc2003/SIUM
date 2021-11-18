@@ -1,5 +1,6 @@
 max_esami = 3
 esami = int(input("Inserisci numero di esami da sostenere: "))
+print("------------------------------------------")
 
 if esami > max_esami:
 	print("Superato numero massimo di esami possibili")
@@ -13,4 +14,5 @@ esame=dict()
 for b in range(esami):
 	esame["IDMatricola"] = input("Inserisci il numero di matricola: ")
 	esame["IDMateria"] = input("Inserisci il numero di materia: ")
+	print("------------------------------------------")
 	file.write("\n"+esame["IDMatricola"]+", "+esame["IDMateria"])
